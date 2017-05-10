@@ -1,0 +1,9 @@
+body {
+    margin: 0px;
+    /* top: 0px; */
+    flex: 1;
+    background: aliceblue;
+}
+div#app {
+    background-color: aliceblue;
+}
