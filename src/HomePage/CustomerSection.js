@@ -2,17 +2,21 @@ import React from 'react';
 import lodash from 'lodash';
 import {render} from 'react-dom';
 const data = [
-  { pic:'./public/images/c1.jpg', heading: 'Insti App have a very user friendly interface.'},
-  { pic:'./public/images/r7.jpg', heading: 'Attendance is displayed in simple manner.'},
-  { pic:'./public/images/r1.jpg', heading: 'Syllabus feature is very nice and helpful.'},
-  { pic:'./public/images/r4.jpg', heading: 'Homework is helpful to all students.'},
-  { pic:'./public/images/r5.jpg', heading: 'Highly benificial app to students and teachers.'},
-  { pic:'./public/images/r9.jpg', heading: 'It feels great to have Insti App in our school.'},
+  { pic:'./public/images/c1.jpg', heading: 'Insti App have a very user friendly interface.', name: '- Sudhir Joshi', role: '(Principal)'},
+  { pic:'./public/images/r7.jpg', heading: 'Insti App have a very user friendly interface.', name: '- Ankita Mohan', role: '(Teacher)'},
+  { pic:'./public/images/r1.jpg', heading: 'Insti App have a very user friendly interface.', name: '- Deepak Kumar', role: '(Parent)'},
+  { pic:'./public/images/r4.jpg', heading: 'Insti App have a very user friendly interface.', name: '- Rohan Tyagi', role: '(Student)'},
+  { pic:'./public/images/r5.jpg', heading: 'Insti App have a very user friendly interface.', name: '- Akash Gupta', role: '(Principal)'},
+  { pic:'./public/images/r9.jpg', heading: 'Insti App have a very user friendly interface.', name: '- Akansha Sharma', role: '(Teacher)'},
 ];
 const Card = (props) => (
-  <div className="customer-border-section">
-    <img src={props.pic} className="customer-card-image"/>
-    <span dangerouslySetInnerHTML={{__html: props.heading}} className="customer-card-text"></span>
+  <div className="customer-border">
+    <img src={props.pic} className="customer-image"/>
+    <div>
+      <span dangerouslySetInnerHTML={{__html: props.heading}} className="customer-card-text"></span>
+      <span className="customer-text">{props.name}</span>
+      <span className="customer-text">{props.role}</span>
+    </div>
   </div>
 )
 const RowCard = ({data}) => (

@@ -3,13 +3,13 @@ import {render} from 'react-dom';
 const PushNotificationSection = () => (
   <section>
     <div className="push-section">
-      <div className="push-border">
+      <div className="push-border-container">
         <img src="./public/images/push1.png" className="push-image" />
-        <h2 className="push-text">Push Notification</h2>
+        <h3 className="push-border">Push Notification</h3>
       </div>
-      <div className="push-content">
-        <img src="./public/images/push2.png" className="push-image" />
-        <h2 className="push-heading">GPS</h2>
+      <div className="push-border-container">
+        <img src="./public/images/push2.jpg" className="push-image" />
+        <h3 className="push-border">GPS</h3>
       </div>
     </div>
   </section>
