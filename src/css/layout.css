@@ -1,0 +1,85 @@
+/**Layout Styles**/
+.row {
+  flex-flow: row wrap;
+}
+.column {
+  float: none;
+  width: auto;
+}
+.align-left {
+  justify-content: flex-start;
+}
+.align-right {
+  justify-content: flex-end;
+}
+.align-center {
+  justify-content: center;
+}
+.align-justify {
+  justify-content: space-between;
+}
+.align-spaced {
+  justify-content: space-around;
+}
+.align-top {
+  align-items: flex-start;
+}
+.align-bottom {
+  align-items: flex-end;
+}
+.align-middle {
+  align-items: center;
+}
+.align-strech {
+  align-items: stretch;
+}
+.align-self-bottom {
+  align-self: flex-end;
+}
+.align-self-middle {
+  align-self: center;
+}
+.align-self-top {
+  align-self: flex-start;
+}
+.align-self-strech {
+  align-self: stretch;
+}
+.margin-top-default {
+  margin-top: 0;
+}
+.margin-bottom-default {
+  margin-bottom: 0;
+}
+.small-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.small-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.small-hidden {
+  display: none;
+}
+.shrink {
+  flex: 0 0 auto;
+  max-width: 100%;
+}
+@media only screen and (min-width : 768px) {
+  .medium-expanded {
+    flex: 1 1 0;
+  }
+  .small-hidden {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .large-expanded {
+    flex: 1 1 0;
+  }
+  .large-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}

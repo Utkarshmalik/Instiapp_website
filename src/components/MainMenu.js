@@ -35,20 +35,23 @@ class MainMenu extends Component {
   }
   render() {
     const className = "main-menu" + this.state.className;
+    const imageClassName = "logo-section" + this.state.className;
     return (
       <div className="header-section">
         <span onClick={this.toggleMenu} className="mobile-menu-icon">&#9776;</span>
         <span>
-          <img src="/./public/images/logo.png" className="logo-section" />
+          <img src="/./public/images/logo.png" className={imageClassName} />
         </span>
           <ul className={className}>
-            <li><NavLink to="/">Home</NavLink></li>
-            <li><NavLink activeClassName="active" to="/erp">ERP</NavLink></li>
-            <li><NavLink activeClassName="active" to="/noticeBoard">Notice Board</NavLink></li>
+            <img src="./public/images/logo.png" className="inner-logo" />
+            <li><NavLink  exact={true} activeClassName="active" to="/">Home</NavLink></li>
+            <li><NavLink activeClassName="active" to="/erp">School Management System</NavLink></li>
+            <li><NavLink activeClassName="active" to="/noticeBoard">Digital Notice Board</NavLink></li>
             <li><NavLink activeClassName="active" to="/features">App Features</NavLink></li>
             <li><NavLink activeClassName="active" to="/principal">Principal App</NavLink></li>
             <li><NavLink activeClassName="active" to="/parent">Parent App</NavLink></li>
             <li><NavLink activeClassName="active" to="/teacher">Teacher App</NavLink></li>
+            <li><NavLink activeClassName="active" to="/transport">GPS Bus Tracking</NavLink></li>
             <li><NavLink activeClassName="active" to="/contact">Contact Us</NavLink></li>
           </ul>
       </div>

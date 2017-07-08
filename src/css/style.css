@@ -1,0 +1,73 @@
+@import "homepage/style.css";
+@import "erppage/style.css";
+@import "rolepage/style.css";
+@import "featurespage/style.css";
+@import "gpspage/style.css";
+@import "noticepage/style.css";
+@import "contactspage/style.css";
+@import "footerpage/style.css";
+/**Common Styles **/
+.section__title {
+  text-align: center;
+}
+.section-squeezed {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.section__title_color_primary {
+  color: black;
+  font-weight: 500;
+}
+.section__title_color_alternative {
+  color: #FF6A00;
+  font-weight: 500;
+}
+.heading {
+}
+.heading__title_color_primary {
+  color: black;
+  font-weight: 500;
+}
+.heading_theme_white .heading__title_color_primary {
+  color: white;
+  font-weight: 500;
+}
+.heading__title_color_alternative {
+  color: #FF6A00;
+  font-weight: 500;
+}
+.section__button {
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+  color: black;
+}
+.section-app-bg {
+  background-image: url("../public/images/background.png");
+}
+.section-app-bg__image {
+  width: 20rem;
+}
+.section-header-component {
+  background-image: url("../public/images/background.png");
+  justify-content: center;
+}
+@media only screen and (min-width : 768px) {
+  .heading {
+    margin-left: 5rem;
+  }
+  .section-header-component {
+    background-image: url("../public/images/background.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    justify-content: space-between;
+    height: 18rem;
+  }
+  .section-app-bg__image {
+    margin-right: 5rem;
+    width: 40%;
+  }
+}

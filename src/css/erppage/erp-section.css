@@ -1,0 +1,21 @@
+/**ERP Section**/
+.section-erp-header {
+  background-image: url("~/./public/images/erp-bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  min-height: 18rem;
+  justify-content: center;
+}
+.erp-card__border {
+  border: 1px solid #a0a0a0;
+  border-radius: 0.2rem;
+  width: 20rem;
+  height: 13rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+.erp-card__text {
+  font-size: 0.8rem;
+  width: 10rem;
+  margin-top: 0;
+}

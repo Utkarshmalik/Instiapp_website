@@ -1,0 +1,53 @@
+/**App Section**/
+.section_role-app {
+  background-color: #00d9e3;
+}
+.role-app-card {
+  width: 18rem;
+  margin-bottom: 3rem;
+}
+.role-app-card img {
+  width: 18rem;
+}
+.role-app-card__content ul {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, .75);
+  overflow: hidden;
+  height: 0;
+  padding: 0;
+  transition: .5s ease;
+  width: 18rem;
+  color: white;
+  line-height: 1.5rem;
+  margin: 0px 1px 0px 1px;
+}
+.role-app-card__content li {
+  padding: 0.2rem;
+  margin-left: 1.5rem;
+}
+.role-app-card__content {
+  position: relative;
+}
+.role-app-card__content:hover ul {
+  height: 100%;
+}
+.role-app-card__footer {
+  margin: -2px 1px 0px 1px;
+  font-size: 1.3rem;
+}
+.role-app-card__footer a {
+  color:tomato;
+  text-decoration: none;
+}
+.role-app-card__footer-title {
+  flex: 4;
+  background-color: white;
+  padding-left: 1rem;
+}
+.role-app-card__footer-icon {
+  flex:1;
+  background-color: rgba(0, 0, 0, .75);
+  padding-top: .2rem;
+}

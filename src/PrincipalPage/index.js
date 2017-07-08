@@ -2,81 +2,80 @@ import React from 'react';
 import HeaderSection from './Header';
 import Footer from '../components/Footer';
 import HeaderComponent from '../components/HeaderComponent';
+import SectionHeading from '../components/SectionHeading';
 import CardComponent from '../components/CardComponent';
+import CustomerComponent from '../components/CustomerComponent';
 const data = [
-  { pic:'./public/images/children.png', heading: 'View childs complete record'},
-  { pic:'./public/images/class.png', heading: 'View class wise data'},
-  { pic:'./public/images/data.png', heading: 'View any teacher data'},
-  { pic:'./public/images/message.png', heading: 'Messages to classes,teacher,parents'},
-  { pic:'./public/images/syllabus.png', heading: 'View any class syllabus'},
-  { pic:'./public/images/news.png', heading: 'View any school news'},
+  {pic: './public/images/child.png', title: 'Child record', heading1: 'View child discipline record.', heading2: 'View child circulars.', heading3: 'View monthly/annually attendance summary.', heading4: 'View child health record.', heading5: 'View child academic record.'},
+  {pic: './public/images/class.png', title: 'Classwise data', heading1: 'Class-section wise timetable.', heading2: 'Course wise syllabus.', heading3: 'Overall attendance summary.', heading4: 'Section or subject wise classwork and homework.', heading5: 'Academic performance per term.'},
+  {pic: './public/images/staff.png', title: 'Teacher & Staff', heading1: 'Teacher wise timetable.', heading2: 'Classwork or Homework assigned by teacher.', heading3: 'Search department or subject wise staff.', heading4: 'Attendance details of staff.', heading5: 'Salary details of staff.'},
+  {pic: './public/images/new.png', title: 'News/Message', heading1: 'Can view all news items.', heading2: 'Can View all circulars.', heading3: 'Can send news items to all/selected parents.', heading4: 'Can send message to all/selected teacher/staff.', heading5: 'Can send circular to single/multiple parents.'},
+];
+const reviewData = [
+  { pic:'./public/images/c1.jpg', title: 'Sudhir Joshi', role: '(Principal)', heading: 'Insti App has a very user friendly interface and it is very easy to use.'},
+  { pic:'./public/images/r9.jpg', title: 'Suman Mohan', role: '(Teacher)', heading: 'Insti App provides easy access to child records.'},
+  { pic:'./public/images/r1.jpg', title: 'Ram Sharma', role: '(Parent)', heading: 'Daily homework and classwork monitoring is quiet easy.'},
 ];
 const RowCard = ({data}) => (
   <div className="section-content">
-    <div className="row-section">
+    <div className="row align-spaced">
       <CardComponent {...data[0]} />
       <CardComponent {...data[1]} />
-      <CardComponent {...data[2]} />
     </div>
   </div>
 )
-const ReviewCard = (props) => (
-  <div className="review-border">
-    <img src={props.src} className="review-image"/>
-    <span className="review-text">{props.name}</span>
+const ReviewCard = ({reviewData}) => (
+  <div className="section-content">
+    <div className="row align-spaced">
+      <CustomerComponent {...reviewData[0]} />
+    </div>
   </div>
 )
 const PrincipalPage = ()=> {
-  const rowData = _.chunk(data, 3);
+  const rowData = _.chunk(data, 2);
+  const row = _.chunk(reviewData, 1);
   return(
-    <main>
+    <main className="page page-principal-app">
       <HeaderSection />
       <section>
-        <HeaderComponent src="./public/images/principal.png" name='Principal App' />
-        <div className="section-content">
+        <HeaderComponent src="./public/images/principal.png" text1='Principal ' text2='App' />
+        <article className="section-content">
           {rowData.map((item, index) =>
            <RowCard key={index} data={item} />
           )}
-        </div>
-        <div className="drawer-row">
-          <img src="./public/images/principal-drawer.png" className="drawer-image"/>
-          <div className="drawer-column">
-            <h2 className="drawer-heading">About Principal App</h2>
-            <ul className="drawer-section">
-              <li className="drawer-inner-text"><span className="drawer-text">Better administration:</span> Principal App will help the principal in maintaining better administration.</li>
-              <li className="drawer-inner-text"><span className="drawer-text">Increase efficiency:</span> Efficiency of the principal could be increased.</li>
-              <li className="drawer-inner-text"><span className="drawer-text">Enhanced coordination:</span> Good coordination between principal and teachers is possible.</li>
-              <li className="drawer-inner-text"><span className="drawer-text">Role based access:</span> Principal would be able to see all students record,teacher record etc.</li>
-              <li className="drawer-inner-text"><span className="drawer-text">Improved management:</span> Optimum resource utilization is possible by the principal.</li>
+        </article>
+        <section className="section_background">
+          <SectionHeading
+            text1='KEY '
+            text2='BENIFITS '
+            text3=''
+          />
+          <article className="row align-spaced align-self-middle margin-top-default section__content shrink">
+            <figure>
+              <img src="./public/images/phone-drawer.png" className="section_role__benifits-image" />
+            </figure>
+            <ul className="section_role__benifits-text">
+              <li>Better administration.</li>
+              <li>Increase efficiency.</li>
+              <li>Better communication.</li>
+              <li>Easy access of child records.</li>
+              <li>Easy access of staff data.</li>
+              <li>Academic analysis.</li>
+              <li>Enhanced coordination with teachers.</li>
+              <li>Keep updated on school activities and on travel.</li>
+              <li>Monitor classwise activity daily.</li>
+              <li>Access reports for poor attendance, fee defaulters.</li>
             </ul>
-          </div>
-        </div>
-        <div className="review-section">
-          <ul className="review-query-border">
-            <li className="review-query-text">How can Insti App helps in attendance management?</li>
-          </ul>
-          <div className="review-column">
-            <ReviewCard src="./public/images/r1.jpg" name='Insti App provides a attendance page with total.' />
-            <ReviewCard src="./public/images/r9.jpg" name='You can see all class wise attendance on its attendance page.' />
-          </div>
-          <div className="review-column">
-            <ReviewCard src="./public/images/r5.jpg" name='Class wise attendance summary is been given with total by the Insti App.' />
-            <ReviewCard src="./public/images/r3.jpg" name='Insti App has a simple attendance page.' />
-          </div>
-        </div>
-        <div className="review-section">
-          <ul className="review-query-border">
-            <li className="review-query-text">Does attendance of teachers is also shown by the help of Insti App?</li>
-          </ul>
-          <div className="review-column">
-            <ReviewCard src="./public/images/r10.jpg" name='Yes it shows teachers attendance also.' />
-            <ReviewCard src="./public/images/r7.jpg" name='All staff attendance is been displayed by Insti App.' />
-          </div>
-          <div className="review-column">
-            <ReviewCard src="./public/images/r2.png" name='All updates are given in News section of the App.' />
-            <ReviewCard src="./public/images/r1.jpg" name='Insti App has circular and news pages that show all updates.' />
-          </div>
-        </div>
+          </article>
+        </section>
+        <section>
+          <h2 className="text-center">Reviews</h2>
+          <article className="row align-spaced">
+            {row.map((item, index) =>
+             <ReviewCard key={index} reviewData={item} />
+            )}
+          </article>
+        </section>
         <Footer />
       </section>
     </main>

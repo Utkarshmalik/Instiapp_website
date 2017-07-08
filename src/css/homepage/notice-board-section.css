@@ -1,0 +1,51 @@
+/**Notice Board Section**/
+.notice-board__footer-border {
+  border: 1px solid #a0a0a0;
+  width: 20rem;
+  height: 20rem;
+}
+.notice-board__footer-title {
+  margin-top: 0;
+  background-color: #00a9c9;
+  color: white;
+}
+.notice-board__footer-button {
+  text-decoration: none;
+  padding-top: 0.5rem;
+  border: 1px solid;
+  border-color: #C93543;
+  background-color: #C93543;
+  color: white;
+  font-weight: bold;
+  width: 12rem;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  margin-top: 1rem;
+}
+.notice-board__footer-button:hover {
+  background-color: white;
+  color: #C93543;
+}
+.section-notice-board {
+  margin-bottom: 1rem;
+}
+.section-notice-board__image {
+  width: 20rem;
+}
+.section-notice-board__text {
+  line-height: 1.3rem;
+  padding-top: 0;
+}
+.section-notice-board__content {
+  width: auto;
+  border: 1px solid #a0a0a0;
+  margin-top: 0.7rem;
+}
+@media only screen and (min-width : 768px) {
+  .section-notice-board__image {
+    width: auto;
+  }
+  .section-notice-board__content {
+    width: 30rem;
+  }
+}

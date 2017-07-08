@@ -1,0 +1,15 @@
+/**Features Section**/
+.features-card__button {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  border: 1px solid;
+  border-color: white;
+  background-color: white;
+  font-weight: bold;
+  width: 6rem;
+  padding: 0.2rem;
+  margin-top: 4rem;
+  border-radius: 0.2rem;
+  align-self: center;
+}

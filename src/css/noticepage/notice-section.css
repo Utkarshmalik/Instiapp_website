@@ -1,0 +1,62 @@
+/**Notice Section**/
+.section_notice__background {
+  background-image: url(/public/images/notice-bg.png);
+  background-size: 100% 100%;
+  min-height: 18rem;
+}
+.section_notice__image {
+  width: 20rem;
+  margin: 2rem;
+}
+.section_notice__text {
+  text-align: justify;
+  line-height: 1.8rem;
+  align-self: center;
+  width: 20rem;
+}
+.section_notice__background-color {
+  background-color: #f5f5f5;
+}
+.notice-card__section {
+  flex-direction: row;
+}
+.notice-card__icon {
+  font-size: 30px;
+  text-align: center;
+  width: 41px;
+}
+.notice-card__heading {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 0;
+}
+.notice-card__text {
+  width: 18rem;
+  text-align: justify;
+  align-self: center;
+}
+@media only screen and (min-width : 768px) {
+  .section_notice__image {
+    margin: 2rem;
+  }
+  .section_notice__text {
+    text-align: justify;
+    line-height: 1.8rem;
+    align-self: center;
+    width: 50%;
+  }
+  .notice-card__icon {
+    font-size: 36px;
+    text-align: center;
+    width: 41px;
+  }
+  .notice-card__heading {
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+  .notice-card__text {
+    width: 28rem;
+    text-align: justify;
+    align-self: center;
+  }
+}

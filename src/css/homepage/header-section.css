@@ -1,0 +1,38 @@
+.section-home-header {
+  background-color: #00d9e3;
+}
+.section-home-header__image-child {
+  width: 24rem;
+}
+.section-home-header__image-tab {
+  margin: 2rem 1rem 1rem 1rem;
+  height: 15rem;
+}
+.section-home-header__button {
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid;
+  border-color: #003639;
+  background-color: #003639;
+  color: white;
+  font-weight: bold;
+  width: 14rem;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  margin-bottom: 1rem;
+  align-self: center;
+}
+.section-home-header__button:hover {
+  background-color: white;
+  color: #003639;
+}
+@media only screen and (min-width : 768px) {
+  .section-home-header__content {
+    margin-top: 2rem;
+  }
+  .section-home-header__image-tab {
+    margin: 0rem 1rem 1rem 1rem;
+    height: 25rem;
+  }
+}

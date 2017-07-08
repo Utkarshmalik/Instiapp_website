@@ -1,0 +1,14 @@
+/**Customer Section**/
+.customer-review-card__image-height {
+  height: 13rem;
+}
+.customer-review-card__border {
+  border: 1px solid;
+  border-color: #9ecaed;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,.2);
+  width: 18rem;
+  height: 22rem;
+}
+.customer-review-card__text {
+  padding: 0.5rem;
+}

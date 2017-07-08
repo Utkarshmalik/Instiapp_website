@@ -1,44 +1,53 @@
 import React from 'react';
 import HeaderSection from './Header';
 import Footer from '../components/Footer';
+import PageHeading from '../components/PageHeading';
 const ContactPage = () => (
   <main>
     <HeaderSection />
-    <section>
-      <div className="contacts-background-image">
-        <h1 className="contacts-heading">Contact <span className="notice-color">Us</span></h1>
-      </div>
-      <h1 className="contacts-inner-heading">Intrested in Insti App and ERP we would love to share it with you.</h1>
-      <div className="contacts-row">
-        <div className="contacts-form-section">
-          Name<input type="text" size="30" name="name" placeholder="Your Name" className="footer-form-text" />
-          Email<input type="email" size="30" name="email" placeholder="Your Email" className="footer-form-text" />
-          Phone no<input type="text" size="30" name="name" placeholder="Name" className="footer-form-text" />
-          Location<input type="text" size="30" name="name" placeholder="Name" className="footer-form-text" />
-          Message<textarea className= "footer-message-section" placeholder="Type your Message here." rows="5"></textarea>
-          <input className="contacts-submit-button" type="submit" value="Submit" />
-        </div>
-        <div>
-          <h2 className="contacts-container-heading">Our Contact</h2>
-          <span className="contacts-text">Phone No: <span className="contacts-text-content">+91-9760689747</span></span>
-          <span className="contacts-text">Our Email: <span className="notice-color">ankit@simplycloud.in</span></span>
-          <h2 className="contacts-container-heading">Key Contacts</h2>
-            <span className="contacts-text">Ankit Babbar</span>
-            <span className="contacts-text-content">+91-9760689747</span>
-            <span className="notice-color">ankit@simplycloud.in</span>
-          <h2 className="contacts-container-heading">Our Address</h2>
-          <div className="contacts-inner-content">
-            <div className="contacts-text-content">333, Anandpuri,</div>
-            <div className="contacts-text-content">near Rohtash Sweets,</div>
+      <section className="section_contacts">
+        <PageHeading
+          text1='Contact '
+          text2='Us '
+          text3=''
+          classes=' heading_theme_white'
+        />
+      </section>
+      <section className="section_contacts__background section__content">
+        <h1 className="section_contacts__heading">Intrested in Insti App and ERP we would love to share it with you.</h1>
+        <article className="row align-spaced">
+          <div className="section_contacts__form section__content">
+            Name<input type="text" size="30" name="name" placeholder="Your Name" className="section_contacts__form-text-box" />
+            Email<input type="email" size="30" name="email" placeholder="Your Email" className="section_contacts__form-text-box" />
+            Phone no<input type="text" size="30" name="phone" placeholder="Your Phone no" className="section_contacts__form-text-box" />
+            City<input type="text" size="30" name="city" placeholder="Your City" className="section_contacts__form-text-box" />
+            Message<textarea className= "section_contacts__form-text-area" placeholder="Type your Message here." rows="5"></textarea>
+            <input className="section_contacts__form-button" type="submit" value="Submit" />
           </div>
-          <div className="contacts-inner-content">
-            <div className="contacts-text-content">Meerut, Uttar Pradesh, </div>
-            <div className="contacts-text-content">250002, India</div>
-          </div>
-        </div>
-      </div>
+          <section className="section_contacts__address-background">
+            <article className="row align-spaced">
+              <div>
+                <h3 className="section-contacts__address-heading">Our Address</h3>
+                <p className="text-center">333, Anandpuri, near Rohtash Sweets,</p>
+                <p className="section-contacts__address-text">Meerut, Uttar Pradesh, India</p>
+              </div>
+              <div>
+                <h3 className="section-contacts__address-heading">Our Contact</h3>
+                <p className="text-center">Phone No: +91-9760689747</p>
+                <p className="section-contacts__address-text">Our Email: ankit@simplycloud.in</p>
+              </div>
+            </article>
+            <article className="section_contacts__key-section">
+              <h3 className="section-contacts__key-heading">Key Contacts</h3>
+              <p className="text-center">Ankit Babbar</p>
+              <p className="section-contacts__address-text">Phone No: +91-9760689747</p>
+              <p className="section-contacts__address-text">Email: ankit@simplycloud.in</p>
+            </article>
+            <a href="/noticeBoard" className="section-contacts__button">GET 2 MONTHS FREE TRIAL</a>
+          </section>
+        </article>
+      </section>
     <Footer />
-    </section>
   </main>
 );
 export default ContactPage;

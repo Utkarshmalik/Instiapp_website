@@ -1,0 +1,31 @@
+/**Features Section**/
+.section_features {
+  background-image: url("~/./public/images/features-bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  min-height: 18rem;
+  justify-content: center;
+}
+.features-card__border {
+  border: 1px solid #a0a0a0;
+  border-radius: 0.2rem;
+  width: 19rem;
+  height: 12rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+.features-card__heading {
+  background-color: #40e0d0;
+  margin-top: 0;
+  color: white;
+}
+.features-card__image {
+  width: 6rem;
+  height: 5rem;
+  margin-top: 1rem;
+}
+.features-card__text {
+  width: 11.5rem;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}

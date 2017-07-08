@@ -1,0 +1,38 @@
+/**GPS Section**/
+.section-gps-header {
+  background-image: url(/public/images/transport.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 18rem;
+  justify-content: center;
+}
+.section-gps__middle-image {
+  background-image: url(/public/images/transport.png);
+  background-size: 100% 100%;
+  min-height: 15rem;
+}
+.section__content {
+  margin-bottom: 2rem;
+}
+.section-gps__image {
+  width: 20rem;
+}
+.section-gps__text {
+  width: 20rem;
+  line-height: 1.5rem;
+}
+.gps-card__row {
+  margin-top: 1rem;
+}
+@media only screen and (min-width : 768px) {
+  .section-gps__image {
+    width: 24rem;
+  }
+  .section-gps__text {
+    width: 50rem;
+    line-height: 1.5rem;
+  }
+  .gps-card__row {
+    margin-top: 2rem;
+  }
+}

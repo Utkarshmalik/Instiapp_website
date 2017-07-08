@@ -1,0 +1,36 @@
+/**ERP Section**/
+.section-erp {
+}
+.section-erp__video {
+  height: 11rem;
+}
+.section-erp__image {
+  width: 20rem;
+}
+.section-erp__buttons-wrapper {
+  margin-bottom: 1rem;
+}
+.section-erp__button {
+  width: 11rem;
+  border-color: #003d44;
+  color: #003d44;
+  background-color: white;
+  margin-top: 1rem;
+  font-weight: 900;
+  transition: all .2s ease-in-out;
+}
+.section-erp__button:hover {
+  background-color: #003d44;
+  color: white;
+  box-shadow: 0 8px 16px 0 #888;
+  transform: scale(1.1);
+}
+@media only screen and (min-width : 768px) {
+  .section-erp__image {
+    width: 30rem;
+  }
+  .section-erp__video {
+    height: 25rem;
+    margin-right: 2rem;
+  }
+}

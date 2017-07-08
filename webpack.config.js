@@ -1,13 +1,16 @@
-var path = require('path');
-
-var MODULE_BUILD_DIR = path.resolve(__dirname, 'public');
-var MODULE_APP_DIR = path.resolve(__dirname, 'src');
+const path = require('path');
+const MODULE_BUILD_DIR = path.resolve(__dirname, 'public');
+const MODULE_APP_DIR = path.resolve(__dirname, 'src');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-var config = {
+const autoprefixer = require('autoprefixer');
+const smartImport = require("postcss-smart-import");
+const ModernizrWebpackPlugin = require('modernizr-webpack-plugin');
+const config = {
   devtool: 'source-map',
   devServer: {
     historyApiFallback: true,
-    port: 8025
+    port: 8025,
+    host: '0.0.0.0'
   },
   entry: MODULE_APP_DIR + '/index.js',
   output: {
@@ -23,38 +26,53 @@ var config = {
       {
         test: /\.css$/,
         use: [
-  {
-    loader: "style-loader",
-    options: {
-      useable: true
-    },
-  },
-  { loader: "css-loader" },
-
-],
+          {
+            loader: "style-loader",
+            options: {
+              useable: true
+            },
+          },
+          {
+            loader: "css-loader",
+            options: {
+              minimize: true
+            }
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: (loader) => [
+                require('postcss-import')({ root: loader.resourcePath }),
+                require('autoprefixer')(),
+                require('cssnano')()
+              ]
+            }
+          }
+        ],
       },
       {
-    test: /\.(gif|png|jpe?g|svg)$/i,
-    loaders: [
-      'file-loader',
-      {
-        loader: 'image-webpack-loader',
-        query: {
-          progressive: true,
-          optimizationLevel: 7,
-          interlaced: false,
-          pngquant: {
-            quality: '65-90',
-            speed: 4
+        test: /\.(gif|png|jpe?g|svg)$/i,
+        loaders: [
+          'file-loader',
+          {
+            loader: 'image-webpack-loader',
+            query: {
+              progressive: true,
+              optimizationLevel: 7,
+              interlaced: false,
+              pngquant: {
+                quality: '65-90',
+                speed: 4
+              }
+            }
           }
-        }
+        ]
       }
-    ]
-  }
     ]
   },
   plugins: [
     new ExtractTextPlugin("main.css"),
+
   ]
 };
 module.exports = config;

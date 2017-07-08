@@ -1,0 +1,68 @@
+/**Footer Section**/
+.section-footer-background {
+  background-image: url("~/./public/images/footer-bg.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  min-height: 18rem;
+}
+.section_footer__heading {
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+}
+.section_footer__text {
+  color: white;
+  width: 20rem;
+  text-align: justify;
+  margin-top: 0;
+}
+.section_footer__address-text {
+  color: white;
+  margin-left: 1rem;
+  width: 18rem;
+}
+.section_footer__margin {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.secttion_footer__form-input {
+  width: 18rem;
+  box-sizing: border-box;
+  margin-top: 0.1rem;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 0.3rem;
+  margin-bottom: 16px;
+}
+.section_footer__form-area {
+  width: 18rem;
+  padding: 15px;
+  border-radius: .3rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  margin-top: .1rem;
+}
+.section_footer__button {
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+  padding: 5px 8px;
+  width: 5rem;
+  border-radius: .3rem;
+  margin-bottom: .5rem;
+}
+.section_footer__button:hover {
+  background-color: #1c3c5d;
+  color: #FF6A00;
+}
+@media only screen and (min-width : 768px) {
+  .section_footer__heading {
+    color: white;
+    font-size: 1.5rem;
+    text-align: justify;
+  }
+  .section_footer__address-text {
+    color: white;
+    margin-left: 0.5rem;
+  }
+}

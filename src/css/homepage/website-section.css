@@ -1,0 +1,8 @@
+/**Website Section**/
+.section-website {
+  background-color: #F5F5F5;
+  align-self: center;
+}
+.section-website__image {
+  width: 15rem;
+}

@@ -2,24 +2,23 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import HeaderSection from './HeaderSection';
 import ErpSection from './ErpSection';
-import PermissionsSection from './PermissionsSection';
+import CustomerReviewSection from './CustomerReviewSection';
+import RoleAppSection from './RoleAppSection';
 import NoticeBoardSection from './NoticeBoardSection';
-import PortfolioSection from './PortfolioSection';
+import WebsiteSection from './WebsiteSection';
 import FeaturesSection from './FeaturesSection';
-import CustomerSection from './CustomerSection';
-import PushNotificationSection from './PushNotificationSection';
+import GpsSection from './GpsSection';
 import Footer from '../components/Footer';
-
 const HomePage = () => (
-  <main className="home-page">
+  <main className="page page-home">
     <HeaderSection />
     <ErpSection />
-    <PermissionsSection />
+    <RoleAppSection />
     <FeaturesSection />
-    <PortfolioSection />
+    <GpsSection />
     <NoticeBoardSection />
-    <CustomerSection />
-    <PushNotificationSection />
+    <WebsiteSection />
+    <CustomerReviewSection />
     <Footer />
   </main>
 )

@@ -2,14 +2,25 @@ import React from 'react';
 import {render} from 'react-dom';
 import MainMenu from '../components/MainMenu';
 const HeaderSection = () => (
-  <section className="home-section hero-section">
-    <MainMenu fixedMenuTopHeight="500"/>
-    <div>
-      <h1 className="home-heading">Personalised App for Your<br />Institution</h1>
-    </div>
-    <a href="https://gmail.com">
-      <img src="./public/images/email-image.png" className="sticky-image"/>
-    </a>
+  <section className="section section-home-header">
+    <header className="section-home-header__header">
+      <MainMenu fixedMenuTopHeight="500"/>
+    </header>
+    <article className="row align-spaced section-home-header__content">
+      <section className="column small-hidden large-expanded medium-expanded">
+        <figure>
+          <img src="./public/images/girl-bg.png" className="section-home-header__image-child" />
+        </figure>
+      </section>
+      <section className="column small-12 large-expanded medium-expanded">
+        <figure>
+          <img src="./public/images/header-img.png" className="section-home-header__image-tab" />
+        </figure>
+        <div>
+          <a href="/noticeBoard" className="section-home-header__button">GET 2 MONTHS FREE TRIAL</a>
+        </div>
+      </section>
+    </article>
   </section>
 );
 export default HeaderSection;
