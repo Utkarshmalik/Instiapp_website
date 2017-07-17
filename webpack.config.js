@@ -2,6 +2,7 @@ const path = require('path');
 const MODULE_BUILD_DIR = path.resolve(__dirname, 'public');
 const MODULE_APP_DIR = path.resolve(__dirname, 'src');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 const smartImport = require("postcss-smart-import");
 const ModernizrWebpackPlugin = require('modernizr-webpack-plugin');
@@ -78,7 +79,7 @@ const config = {
   },
   plugins: [
     new ExtractTextPlugin("main.css"),
-
+    new UglifyJSPlugin()
   ]
 };
 module.exports = config;

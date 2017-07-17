@@ -17,7 +17,7 @@ const HeaderSection = () => (
           <img src="./public/images/header-img.png" className="section-home-header__image-tab" />
         </figure>
         <div>
-          <a href="/noticeBoard" className="section-home-header__button">GET 2 MONTHS FREE TRIAL</a>
+          <a href="/contact" className="section-home-header__button">GET FREE TRIAL</a>
         </div>
       </section>
     </article>

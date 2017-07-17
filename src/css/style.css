@@ -60,7 +60,7 @@
     margin-left: 5rem;
   }
   .section-header-component {
-    background-image: url("../public/images/background.png");
+    background-image: url("~/./public/images/background.png");
     justify-content: space-between;
     height: 18rem;
   }
