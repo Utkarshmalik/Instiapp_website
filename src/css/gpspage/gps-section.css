@@ -43,7 +43,7 @@
 }
 @media only screen and (min-width : 768px) {
   .section-gps__image {
-    min-height: 15rem;
+    min-height: 8rem;
   }
   .section-gps__text {
     width: 50rem;

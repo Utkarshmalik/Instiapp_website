@@ -1,7 +1,6 @@
 /**Role Section**/
 .section_role {
-  background-image: url("~/./public/images/background.png");
-  min-height: 18rem;
+  background-color: #f5f5f5;
 }
 .role-card__wrapper {
   margin: 1rem 1rem;
