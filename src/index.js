@@ -11,6 +11,10 @@ import NoticeBoardPage from './NoticeBoardPage';
 import TransportPage from './TransportPage';
 import ContactPage from './ContactPage';
 import FontFaceObserver from 'fontfaceobserver';
+import Promise from 'promise-polyfill';
+if (!window.Promise) {
+  window.Promise = Promise;
+}
 // Observe loading of Open Sans (to remove open sans, remove the <link> tag in
 // the index.html file and this observer)
 const openSansObserver = new FontFaceObserver('Open Sans', {});

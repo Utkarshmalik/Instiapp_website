@@ -1,3 +1,4 @@
+/***Component for Header Section of Role App Section***/
 import React from 'react';
 import {render} from 'react-dom';
 const HeaderComponent = (props) => (

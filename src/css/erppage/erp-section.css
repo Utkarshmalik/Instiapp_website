@@ -6,16 +6,40 @@
   min-height: 18rem;
   justify-content: center;
 }
-.erp-card__border {
+.erp-card__wrapper {
+  margin: 1rem 1rem;
   border: 1px solid #a0a0a0;
-  border-radius: 0.2rem;
-  width: 20rem;
-  height: 13rem;
-  margin-top: 2rem;
-  margin-bottom: 0;
+  border-radius: 0.3rem;
+  flex: 1 0 auto;
+}
+.erp-card__heading-wrapper {
+  background-color: #40e0d0;
+  height: 3rem;
+}
+.erp-card__heading {
+  color: white;
+  margin-top: 0.8rem;
+}
+.erp-card__content {
+  padding: 0.5rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+.erp-card__image {
+  width: 70%;
 }
 .erp-card__text {
-  font-size: 0.8rem;
-  width: 10rem;
+  flex: 1 0 auto;
   margin-top: 0;
+  font-size: 0.8rem;
+  width: 60%;
+}
+@media only screen and (min-width : 768px) {
+  .erp-card__wrapper {
+    margin: 2rem 10rem;
+  }
+  .erp-card__text {
+    font-size: 1rem;
+    width: 50%;
+  }
 }

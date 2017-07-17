@@ -38,7 +38,11 @@ class MainMenu extends Component {
     const imageClassName = "logo-section" + this.state.className;
     return (
       <div className="header-section">
-        <span onClick={this.toggleMenu} className="mobile-menu-icon">&#9776;</span>
+        <span onClick={this.toggleMenu} className="mobile-menu-icon">
+          <a>
+            <i className="fa fa-bars"></i>
+          </a>
+        </span>
         <span>
           <img src="/./public/images/logo.png" className={imageClassName} />
         </span>

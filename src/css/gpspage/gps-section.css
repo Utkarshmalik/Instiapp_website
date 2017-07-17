@@ -14,19 +14,36 @@
 .section__content {
   margin-bottom: 2rem;
 }
-.section-gps__image {
-  width: 20rem;
-}
-.section-gps__text {
-  width: 20rem;
-  line-height: 1.5rem;
-}
 .gps-card__row {
   margin-top: 1rem;
 }
+.gps-card__wrapper {
+  margin: 1rem 1rem;
+}
+.gps-card__icon {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+}
+.section-gps__background-color {
+  background-color: #f5f5f5;
+}
+.section-gps__image {
+  min-height: 8rem;
+}
+.gps-row-card__wrapper {
+  margin: 1rem 1rem;
+  align-items: center;
+}
+.gps-row-card__image {
+  width: 100%;
+}
+.gps-row-card__content {
+  width: 100%;
+}
 @media only screen and (min-width : 768px) {
   .section-gps__image {
-    width: 24rem;
+    min-height: 15rem;
   }
   .section-gps__text {
     width: 50rem;
@@ -34,5 +51,20 @@
   }
   .gps-card__row {
     margin-top: 2rem;
+  }
+  .gps-card__wrapper {
+    margin: 2rem 5rem;
+  }
+  .gps-row-card__wrapper {
+    margin: 2rem 5rem;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .gps-row-card__image {
+    width: 80%;
+    height: 12rem;
+  }
+  .gps-row-card__content {
+    width: 60%;
   }
 }

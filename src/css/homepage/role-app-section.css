@@ -47,7 +47,7 @@
   padding-left: 1rem;
 }
 .role-app-card__footer-icon {
-  flex:1;
+  flex: 1 0 auto;
   background-color: rgba(0, 0, 0, .75);
   padding-top: .2rem;
 }

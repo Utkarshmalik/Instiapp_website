@@ -1,15 +1,52 @@
 /**Features Section**/
-.features-card__button {
+.features-home-card__wrapper {
+  margin: 1rem 1rem;
+  justify-content: center;
+  border: 1px solid #a0a0a0;
+  background: #eeeeef;
+  box-shadow: 0 0 10px #9ecaed;
+  padding: 0.5rem;
+  position: relative;
+  flex: 1 0 auto;
+}
+.features-home-card__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+  justify-content: center;
+}
+.features-home-card__wrapper:hover .features-home-card__overlay {
+  opacity: 1;
+}
+.features-home-card__image {
+  width: 60%;
+  align-self: center;
+}
+.features-home-card__content {
+  font-weight: bold;
+  color: #008cba;
+}
+.features-home-card__button {
   text-decoration: none;
   color: black;
   text-align: center;
   border: 1px solid;
   border-color: white;
+  border-radius: 0.2rem;
   background-color: white;
   font-weight: bold;
   width: 6rem;
-  padding: 0.2rem;
-  margin-top: 4rem;
-  border-radius: 0.2rem;
   align-self: center;
+}
+@media only screen and (min-width : 768px) {
+  .features-home-card__wrapper {
+    margin: 2rem 10rem;
+  }
 }

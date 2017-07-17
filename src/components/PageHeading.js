@@ -1,3 +1,4 @@
+/***Component for Inner Pages Headings***/
 import React from 'react';
 import {render} from 'react-dom';
 
