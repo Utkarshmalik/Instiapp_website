@@ -79,7 +79,7 @@ const config = {
   },
   plugins: [
     new ExtractTextPlugin("main.css"),
-    new UglifyJSPlugin()
+    new UglifyJSPlugin({ sourceMap: true, minimize: true })
   ]
 };
 module.exports = config;

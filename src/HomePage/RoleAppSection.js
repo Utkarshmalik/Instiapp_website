@@ -29,13 +29,13 @@ const RoleAppSection = () => (
     <SectionHeading
       text1="Permissions and  "
       text2="role "
-      text3=" based App"
+      text3=" based View"
     />
     <article className="row align-spaced section__content">
       <Card
         src="./public/images/p1.png"
         alt="Principal App Image"
-        title="Principal App"
+        title="Principal View"
         items={[
           'Can view any child complete record: parent information, attendance record, circulars, examination report, etc',
           'Can view any teacher or staff data: attendance, leave, application, homework assigned, etc.',
@@ -46,7 +46,7 @@ const RoleAppSection = () => (
         <Card
           src="./public/images/p3.png"
           alt="Parent App Image"
-          title="Parent App"
+          title="Parent View"
           items={[
             'Can get instant updates from school about her child fees, attendance, homework, classwork, circulars, etc.',
             'Can view child timetable, syllabus, school gallery, school calendar, teacher directory etc.',
@@ -57,7 +57,7 @@ const RoleAppSection = () => (
           <Card
             src="./public/images/p2.png"
             alt="Teacher App Image"
-            title="Teacher App"
+            title="Teacher View"
             items={[
               'Can view any child complete record as class teacher or subject teacher',
               'Can view own timetable, attendance, classwork, homework, etc.',

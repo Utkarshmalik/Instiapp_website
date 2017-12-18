@@ -26,7 +26,7 @@ const Footer = (props) => (
           <img src="./public/images/location.png" className="footer-address-image" />
         </figure>
         <div>
-          <span className="section_footer__address-text">333, Anandpuri, Meerut, Uttar Pradesh, India</span>
+          <span className="section_footer__address-text">Flat 8, A/120, Paryavaran Complex, IGNOU Road, Delhi - 110030</span>
         </div>
       </div>
       <div className="row align-self-middle section_footer__margin">
@@ -34,7 +34,7 @@ const Footer = (props) => (
           <img src="./public/images/phone.png" className="footer-address-image" />
         </figure>
         <div>
-          <span className="section_footer__address-text">+9760689747</span>
+          <span className="section_footer__address-text">+91-9223539584, +91-7060890830</span>
         </div>
       </div>
       <div className="row align-self-middle">
@@ -42,7 +42,7 @@ const Footer = (props) => (
           <img src="./public/images/email.png" className="footer-address-image" />
         </figure>
         <div>
-          <span className="section_footer__address-text">info@simplycloud.in</span>
+          <span className="section_footer__address-text">vikram@instiapp.in</span>
         </div>
       </div>
     </article>

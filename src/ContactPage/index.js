@@ -28,22 +28,21 @@ const ContactPage = () => (
             <article className="row align-spaced">
               <div>
                 <h3 className="section-contacts__address-heading">Our Address</h3>
-                <p className="text-center">333, Anandpuri, near Rohtash Sweets,</p>
-                <p className="section-contacts__address-text">Meerut, Uttar Pradesh, India</p>
+                <p className="text-center">Flat 8, A/120, Paryavaran complex,</p>
+                <p className="section-contacts__address-text">IGNOU Road, Delhi - 110030</p>
               </div>
               <div>
                 <h3 className="section-contacts__address-heading">Our Contact</h3>
-                <p className="text-center">Phone No: +91-9760689747</p>
-                <p className="section-contacts__address-text">Our Email: ankit@simplycloud.in</p>
+                <p className="text-center">Phone No: +91-9223539584</p>
+                <p className="section-contacts__address-text">Our Email: vikram@instiapp.in</p>
               </div>
             </article>
             <article className="section_contacts__key-section">
               <h3 className="section-contacts__key-heading">Key Contacts</h3>
               <p className="text-center">Ankit Babbar</p>
-              <p className="section-contacts__address-text">Phone No: +91-9760689747</p>
-              <p className="section-contacts__address-text">Email: ankit@simplycloud.in</p>
+              <p className="section-contacts__address-text">Phone No: +91-9223539584</p>
+              <p className="section-contacts__address-text">Email: vikram@instiapp.in</p>
             </article>
-            <a href="/noticeBoard" className="section-contacts__button">GET 2 MONTHS FREE TRIAL</a>
           </section>
         </article>
       </section>
