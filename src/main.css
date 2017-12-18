@@ -688,7 +688,7 @@ ul.main-menu a.active {
   ul.main-menu.show-mobile-menu {
     display: flex;
     width: 90%;
-    font-size: 0.7rem;
+    font-size: 1rem;
     margin-top: 0;
   }
   /****Basic Layout****/
